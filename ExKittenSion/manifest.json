@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "ExKittension",
+  "version": "1.2",
+  "web_accessible_resources": [
+    {
+      "resources": ["images/*.jpg"],
+      "matches": ["*://*/*"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["kitten.js"]
+    }
+  ],
+  "action": {
+    "default-icon": "images/cat_icon.png",
+    "default_title": "kitten everywhere!"
+  }
+}

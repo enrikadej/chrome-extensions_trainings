@@ -1,0 +1,19 @@
+
+{
+  "name": "makeAllKittens",
+  "version": "0.2",
+  "description": "all p will be purple!",
+  "content_scripts": [
+    {
+        "all_frames": true,
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": [
+            "content.js"
+        ]
+    }
+],
+  "permissions": ["activeTab", "tabs", "storage"],
+  "manifest_version": 3
+}

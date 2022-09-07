@@ -1,0 +1,25 @@
+
+{
+  "name": "background",
+  "version": "1.2",
+  "description": "see background",
+  "content_scripts": [
+    {
+        "all_frames": true,
+        "matches": [
+            "<all_urls>"
+        ],
+        "js": [
+            "content.js"
+        ]
+    }
+],
+"background": {
+  "service_worker": "background.js"
+},
+  "permissions": ["activeTab", "tabs", "storage"],
+  "action": {
+    "default_icon": "re.png"
+  },
+  "manifest_version": 3
+}

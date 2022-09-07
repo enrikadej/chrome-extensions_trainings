@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    const string = 'vicky hey vicky';
+    const needCutWord = 'vicky'
+    const word = 'sophia'
+
+    const changeWord = (str, cuttedWord, newWord) => {
+      const regex = new RegExp(cuttedWord + '$');
+      return str.replace(regex, newWord)
+    }
+
+    console.log(changeWord(string, needCutWord, word))
+
+    // const str = "Hello yes what are you yes doing yes"
+    // const removeStr = "yes" //variable
+    // const regex =  new RegExp(removeStr,'g'); // correct way
+    // const newstr = str.replace(regex,''); // it works
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
